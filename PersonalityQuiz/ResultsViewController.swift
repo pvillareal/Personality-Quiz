@@ -26,6 +26,7 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculatePersonalityResult()
         // Do any additional setup after loading the view.
     }
     

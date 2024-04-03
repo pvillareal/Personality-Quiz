@@ -263,7 +263,7 @@
                         <outlet property="singleButton3" destination="Yoz-mG-aPA" id="Uca-gV-xHq"/>
                         <outlet property="singleButton4" destination="KmS-XO-2mb" id="p4U-V3-06r"/>
                         <outlet property="singleStackView" destination="s0m-AS-uX3" id="3Oz-nR-aSG"/>
-                        <segue destination="PS8-Jn-SN0" kind="show" destinationCreationSelector="showResults:" id="qXZ-Hf-Znq"/>
+                        <segue destination="PS8-Jn-SN0" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="qXZ-Hf-Znq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLv-bs-im3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -305,7 +305,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="rbw-sC-Dnd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="b5r-Rr-BQF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="b5r-Rr-BQF">
+                            <connections>
+                                <segue destination="6Q6-Ag-A3P" kind="unwind" unwindAction="unwintToQuizIntroductionWithSegue:" id="KHF-09-mPu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultsAnswerLabel" destination="poV-jy-zYR" id="rKe-I1-kDD"/>
@@ -313,6 +317,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsS-8X-hTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Q6-Ag-A3P" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2634.3511450381679" y="3.5211267605633805"/>
         </scene>
