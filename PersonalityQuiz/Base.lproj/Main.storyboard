@@ -80,21 +80,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="qSH-8y-RF8" eventType="touchUpInside" id="sct-RY-gUW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-sN-Njz">
                                         <rect key="frame" x="0.0" y="61.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="qSH-8y-RF8" eventType="touchUpInside" id="tg2-5j-Eu9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoz-mG-aPA">
                                         <rect key="frame" x="0.0" y="122.66666666666667" width="353" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="qSH-8y-RF8" eventType="touchUpInside" id="4gw-uY-Pld"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmS-XO-2mb">
                                         <rect key="frame" x="0.0" y="184" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="qSH-8y-RF8" eventType="touchUpInside" id="gub-WP-Lpx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -161,6 +173,9 @@
                                         <rect key="frame" x="0.0" y="204" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="qSH-8y-RF8" eventType="touchUpInside" id="4b5-oV-LLZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -196,6 +211,9 @@
                                         <rect key="frame" x="0.0" y="90.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="qSH-8y-RF8" eventType="touchUpInside" id="nUM-nm-XjK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -229,19 +247,23 @@
                         <outlet property="multiLabel2" destination="hxt-7z-VgI" id="38B-MS-7NO"/>
                         <outlet property="multiLabel3" destination="TgO-Kg-C9Y" id="BYm-7r-WUy"/>
                         <outlet property="multiLabel4" destination="VCW-ej-5l4" id="66l-bf-G8M"/>
+                        <outlet property="multiSwitch1" destination="lzd-fK-vRI" id="y6a-zT-TvK"/>
+                        <outlet property="multiSwitch2" destination="NTH-Sa-9aK" id="7a0-R5-eQT"/>
+                        <outlet property="multiSwitch3" destination="eFZ-rV-4Ep" id="0dA-GX-fUA"/>
+                        <outlet property="multiSwitch4" destination="ff0-53-go2" id="STx-w7-Mlu"/>
                         <outlet property="multipleStackView" destination="F9J-lc-Xtn" id="sR8-K6-Dwh"/>
-                        <outlet property="questionLAbel" destination="oQf-QN-3qJ" id="ENr-C3-z9T"/>
-                        <outlet property="questionLabel" destination="oQf-QN-3qJ" id="ues-mx-7oh"/>
+                        <outlet property="questionLabel" destination="oQf-QN-3qJ" id="ENr-C3-z9T"/>
                         <outlet property="questionProgressView" destination="agB-mg-ksu" id="GbJ-TC-HGd"/>
                         <outlet property="rangedLabel1" destination="tkC-xN-kPD" id="VGp-Zs-SDg"/>
                         <outlet property="rangedLabel2" destination="LyJ-5r-7Fp" id="wjy-KP-el7"/>
+                        <outlet property="rangedSlider" destination="EJm-c7-2lM" id="0fi-xs-8aM"/>
                         <outlet property="rangedStackView" destination="wtD-G9-tj6" id="daj-r5-PpB"/>
                         <outlet property="singleButton1" destination="gss-Og-lMv" id="ijf-H0-28F"/>
                         <outlet property="singleButton2" destination="Dfi-sN-Njz" id="B1l-gu-mbp"/>
                         <outlet property="singleButton3" destination="Yoz-mG-aPA" id="Uca-gV-xHq"/>
                         <outlet property="singleButton4" destination="KmS-XO-2mb" id="p4U-V3-06r"/>
                         <outlet property="singleStackView" destination="s0m-AS-uX3" id="3Oz-nR-aSG"/>
-                        <segue destination="PS8-Jn-SN0" kind="show" id="qXZ-Hf-Znq"/>
+                        <segue destination="PS8-Jn-SN0" kind="show" destinationCreationSelector="showResults:" id="qXZ-Hf-Znq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLv-bs-im3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -285,6 +307,10 @@
                     <navigationItem key="navigationItem" title="Results" id="rbw-sC-Dnd">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="b5r-Rr-BQF"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultsAnswerLabel" destination="poV-jy-zYR" id="rKe-I1-kDD"/>
+                        <outlet property="resultsDefinitionLabel" destination="WhT-uW-H3G" id="i6y-pU-HCV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsS-8X-hTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
